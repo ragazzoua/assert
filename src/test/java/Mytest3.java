@@ -1,4 +1,5 @@
 import junit.framework.TestCase;
+import org.hamcrest.CoreMatchers;
 import org.junit.*;
 
 import static com.sun.org.apache.xerces.internal.util.PropertyState.is;
@@ -18,7 +19,8 @@ public class Mytest3 {
     public void testEquals() {
         String theBiscuit = new String("Ginger");
         String myBiscuit = new String("Ginger");
-        assertThat(theBiscuit, equalTo(myBiscuit));
+        /*assertThat(theBiscuit, equalTo(myBiscuit));*/
+        assertThat(theBiscuit, CoreMatchers.is(myBiscuit));
 
 
 
