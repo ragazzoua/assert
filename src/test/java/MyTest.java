@@ -26,6 +26,8 @@ public class MyTest {
         byte[] bytes1= "text".getBytes();
         /*assertEquals("array different","text", "text");*/
         assertThat("text", both(containsString("t")).and(containsString("x")));
+
+
     }
     @Test
     public void test2() {
